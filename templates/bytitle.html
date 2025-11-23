@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Search Title</title>
+    <title>Enter Title</title>
 </head>
 <body>
 <form method="post" action="/results/booksbytitle">
     {{form.csrf_token}}
     <br>
-        {{form.title.label}} {{form.title(size=30)}} <br />
+    <h4> Enter {{form.title.label}} segment:  {{form.title(size=30)}} </h4>
     <br />
     {% if form.errors %}
     <p> {{form.errors.items()}}</p>

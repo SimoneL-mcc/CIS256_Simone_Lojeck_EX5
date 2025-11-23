@@ -2,16 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Search Publisher</title>
+    <title>Select Publisher</title>
 </head>
 <body>
 <form method="post" action="/results/booksbypublisherid">
     {{form.csrf_token}}
-    {{form.publisher_choice}}
+    <h4> Select Publisher:
+    {{form.publisher_choice}}</h4>
     <br />
     {% if form.errors %}
     <p> {{form.errors.items()}}</p>
-
     {% endif %}
     <input type="submit" name="submitted" value="Get Books by That Publisher!"/>
 

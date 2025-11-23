@@ -11,9 +11,15 @@
 <meta name="keywords" content="keywords describing this page, most search engines
 ignore this now due to abuse"/>
     <link rel="stylesheet" href="{{url_for('static',filename = 'my.css')}}" type="text/css" />
+<style>
+    table {
+    border-collapes: separate;
+    border-spacing: 30px 0;
+    }
+</style>
     </head>
     <body>
-    <h1>List of Books that include inputted Title</h1>
+    <h1>List of Books that include inputted Title Segment</h1>
     <table>
         <tr>
             <th>Title</th>
@@ -30,7 +36,7 @@ ignore this now due to abuse"/>
 </tr>
 {% endfor %}
 </table>
-
+<hr>
 <div id="validator">
 <a href="http://validator.w3.org/nu/?doc=https://nbtl.mesacc.edu{{url_for('index')}}">
 HTML 5 Validation</a>
